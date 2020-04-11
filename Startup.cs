@@ -41,6 +41,10 @@ namespace google_homepagev2
             }
 
             app.UseHttpsRedirection();
+
+            //to serve my default html on root request
+            app.UseDefaultFiles();
+
             app.UseStaticFiles();
 
             app.UseRouting();
