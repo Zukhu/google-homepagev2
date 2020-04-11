@@ -1,0 +1,148 @@
+html, body {
+    background-color: white;
+    height: 100%;
+}
+
+
+/*-- NAVIGATION BAR --*/
+
+a, u {
+    text-decoration: none;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navbar > a {
+    position: relative;
+    top: 50%; bottom: 50%;
+    color: darkslategray;
+}
+
+#googlemenu, #googleaccount {
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    transition: filter .2s ease-in-out;
+    filter: grayscale(175%) brightness(75%) contrast(25%);
+}
+
+#imageslink, #gmaillink {
+    padding-top: 2px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#googlemenu:hover, #googleaccount:hover {
+    filter: grayscale(100%) brightness(0%) contrast(100%);
+}
+
+/*-- ----------- --*/
+
+
+
+
+
+#containerlogo {
+    width: 100%;
+    position: relative;
+    top: 35%;
+}
+
+#containerlogo > #googlelogo {
+    width:100%;
+    max-width:400px; 
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    margin: auto;
+}
+
+
+
+#search_form {
+    position: absolute;
+    top: 350px;
+    left: 410px;
+    border: solid;
+    border-width: 1px;
+    width: 600px;
+    border-color: rgba(243, 241, 239, 1);
+    border-radius: 25px;
+}
+
+#search_form > #search_image {
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+    
+}
+
+#search_form > #search_voice {
+    position: relative;
+    height: 100%;
+    left: 340px;
+}
+
+#search_input {
+    outline: none;
+    border: none;
+}
+#search_input:click {
+    outline: none;
+    border:none;
+}
+
+#google_buttons {
+    position: absolute;
+    top: 440px;
+    left: 540px;
+}
+
+#button_search, #button_lucky {
+    height: 40px;
+    width: 140px;
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 3px;
+}
+
+#button_lucky {
+    margin-left: 10px;
+}
+
+#google_languages {
+    position: absolute;
+    top: 480px;
+    left: 530px;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #EEEEEE;
+    border-style: solid;
+    border-width:  1px;
+    border-color: #E5E5E5;
+    grid-template-rows: 1fr 1fr;
+}
+
+#flexbox_footer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#footer_options_left {
+    align-self: flex-start;
+}
+
+#footer_options_right {
+    align-self: flex-end;
+}
+
